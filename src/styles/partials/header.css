@@ -62,9 +62,9 @@
   .header-menu {
     gap: 12px;
   }
-  
+
   .header-menu a {
     padding: 8px 12px;
-    font-size: 0.875rem;  
+    font-size: 0.875rem;
   }
 }

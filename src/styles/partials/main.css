@@ -1,0 +1,14 @@
+/* Globais */
+@import url('../common/reset.css');
+@import url('../common/global.css');
+@import url('../fonts/font.css');
+
+/* Utilidades */
+@import url('../utils/components.css');
+@import url('../utils/typography.css');
+@import url('../utils/colors.css');
+
+/* Página principal */
+@import url('../partials/header.css');
+@import url('../partials/introducao.css');
+@import url('../partials/bicycle-list.css');
