@@ -1,4 +1,4 @@
-/* Arquivos globais */
+/* Globais */
 @import url('./global/reset.css');
 @import url('./global/global.css');
 @import url('./fonts/font.css');
@@ -8,7 +8,7 @@
 @import url('./utils/typography.css');
 @import url('./utils/colors.css');
 
-/* Home */
+/* Homes */
 @import url('./home/header.css');
 @import url('./home/introducao.css');
 
