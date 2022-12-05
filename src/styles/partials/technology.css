@@ -44,6 +44,14 @@
   gap: 40px;
 }
 
+.technology-benefits div {
+  transition: 0.3s;
+}
+
+.technology-benefits div:hover {
+  transform: translateY(-0.625rem);
+}
+
 .technology-benefits h3 {
   margin: 0 0 8px 0;
   /* Não irá deixar o H3 quebrar por ser o tamanho máximo. */

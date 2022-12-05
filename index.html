@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <!-- É um header pois é o cabeçalho do site. -->
   <header class="header-background">
     <div class="header container">
       <a href="./">
@@ -25,22 +26,15 @@
 
       <nav aria-label="Primária">
         <ul class="header-menu font-1-m color-0">
-          <li>
-            <a href="./src/templates/bicycle.html">Bicicletas</a>
-          </li>
-
-          <li>
-            <a href="./src/templates/secure.html">Seguros</a>
-          </li>
-
-          <li>
-            <a href="./src/templates/contact.html">Contato</a>
-          </li>
+          <li><a href="./src/templates/bicycle.html">Bicicletas</a> </li>
+          <li><a href="./src/templates/secure.html">Seguros</a></li>
+          <li><a href="./src/templates/contact.html">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <!-- É um main pois é a parte principal do site. -->
   <main class="introduction-background">
     <div class="introduction container">
       <div class="introduction-content">
@@ -56,6 +50,7 @@
     </div>
   </main>
 
+  <!-- É um article pois faz sentido sozinho. -->
   <article class="bicycle-list">
     <h2 class="container font-1-xxl">Escolha a sua<span class="color-p1">.</span></h2>
 
@@ -86,6 +81,7 @@
     </ul>
   </article>
 
+  <!-- É um article pois faz sentido sozinho. -->
   <article class="technology-background">
     <div class="technology container">
       <div class="technology-content">
@@ -102,7 +98,7 @@
             <h3 class="font-1-m color-0">Motor Elétrico</h3>
             <p class="font-2-s color-5">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
           </div>
-  
+
           <div>
             <img src="./src/assets/svg/rastreador.svg" alt="">
             <h3 class="font-1-m color-0">Rastreador</h3>
@@ -116,6 +112,37 @@
       </div>
     </div>
   </article>
+
+  <!-- É uma section pois não faz sentido sozinho. -->
+  <section class="partners" aria-label="Nossos parceiros">
+    <h2 class="container font-1-xxl">Nossos parceiros<span class="color-p1">.</span></h2>
+
+    <ul>
+      <li><img src="./src/assets/svg/caravan.svg" alt="Caravan"></li>
+      <li><img src="./src/assets/svg/ranek.svg" alt="Ranek"></li>
+      <li><img src="./src/assets/svg/handel.svg" alt="Handel"></li>
+      <li><img src="./src/assets/svg/dogs.svg" alt="Dogs"></li>
+      <li><img src="./src/assets/svg/lescone.svg" alt="Lescone"></li>
+      <li><img src="./src/assets/svg/flexblog.svg" alt="Flexblog"></li>
+      <li><img src="./src/assets/svg/wildbeast.svg" alt="Wildbeast"></li>
+      <li><img src="./src/assets/svg/surfbot.svg" alt="Surfbot"></li>
+    </ul>
+  </section>
+
+  <!-- É uma section pois não faz sentido sozinho. -->
+  <section class="testimony" aria-label="Depoimento">
+    <div class="testimony-image">
+      <img src="./src/assets/img/depoimento.jpg" alt="Pessoa pedalando uma bicicleta Bikcraft">
+    </div>
+
+    <div class="testimony-content">
+      <blockquote class="font-1-xl color-p5">
+        <p>Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.</p>
+      </blockquote>
+
+      <span class="font-1-m-b color-p4">Ana Júlia</span>
+    </div>
+  </section>
 </body>
 
 </html>

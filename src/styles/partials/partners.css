@@ -1,0 +1,66 @@
+.partners {
+  padding: 60px 0 120px 0;
+}
+
+.partners h2 {
+  margin: 0 0 60px 0;
+}
+
+.partners ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.partners li {
+  display: flex;
+  padding: 32px;
+  border-left: 2px solid var(--color-2);
+}
+
+.partners li:first-child,
+.partners li:nth-child(5) {
+  border-left: none;
+}
+
+/* A partir do quinto filho ele irá aplicar borda  no topo. */
+.partners li:nth-child(n + 5) {
+  border-top: 2px solid var(--color-2);
+}
+
+.partners li img {
+  margin: auto;
+  transition: 0.2s;
+}
+
+.partners li img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .partners {
+    padding: 60px 0 60px 0;
+  }
+
+  .partners h2 {
+    margin: 0 0 20px 0;
+  }
+
+  .partners ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partners li {
+    padding: 20px;
+  }
+
+  .partners li:nth-child(odd) {
+    border-left: none;
+  }
+
+  .partners li:nth-child(n + 3) {
+    border-top: 2px solid var(--color-2);
+  }
+}
