@@ -12,10 +12,6 @@
   border-radius: 0;
 }
 
-.testimony-image img:hover {
-  animation: bounce-top .9s linear both
-}
-
 .testimony-content {
   padding: 40px 40px 80px 80px;
   align-self: end;
