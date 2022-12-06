@@ -1,0 +1,67 @@
+.footer-background {
+  background-color: var(--color-12);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 5fr 4fr;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.footer h3 {
+  margin: 0 0 32px 0;
+}
+
+.footer-contact ul {
+  margin: 0 0 32px 0;
+}
+
+.footer li {
+  margin: 0 0 16px 0;
+}
+
+.footer-contact li:nth-child(even):after {
+  content: '';
+  display: block;
+  max-width: 360px;
+  height: 2px;
+  background-color: var(--color-11);
+  margin: 16px 0 0 0;
+}
+
+.footer-media {
+  display: flex;
+  gap: 32px;
+}
+
+.footer a:hover {
+  color: var(--color-0);
+}
+
+.footer-copy {
+  grid-column: 1 / -1;
+  margin: 40px 0 0 0;
+}
+
+@media (max-width: 800px) {
+  /* Fala com a primeira imagem direta presente no footer. */
+  .footer > img {
+    display: none;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .footer-copy {
+    margin: 0px;
+  }
+}

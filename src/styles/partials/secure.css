@@ -1,0 +1,68 @@
+.secure-background {
+  background-color: var(--color-11);
+}
+
+.secure {
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.secure h2 {
+  grid-column: 1 / -1;
+}
+
+.secure-item {
+  background-color: var(--color-12);
+  padding: 32px 32px 32px 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.secure-item h3 {
+  margin: 0 0 30px 0;
+}
+
+.secure-item span {
+  display: block;
+  text-align: right;
+  grid-column: 2;
+}
+
+.secure-item ul {
+  grid-column: 1 / -1;
+  margin: 0 0 32px 0;
+}
+
+.secure-item li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Adiciona margin somente se a LI for seguida de outra LI. */
+.secure-item li + li {
+  margin: 20px 0 0 0;
+}
+
+.secure-item li::before {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url('../../assets/svg/lista.svg');
+  position: absolute;
+  left: -21px;
+}
+
+.secure-item a {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 800px) {
+  .secure {
+    grid-template-columns: 1fr;
+  }
+}

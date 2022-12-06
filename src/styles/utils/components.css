@@ -14,14 +14,26 @@
   color: var(--color-p5);
   /* Peso - Tamanho/Altura - Fonte */
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  /* O tamanho máximo dele é o tamanho do container do botão. */
+  max-width: max-content;
 }
 
 .button:hover {
   background: linear-gradient(#FFB60D, #E59317);
+  animation: jello-vertical .9s linear both
+}
+
+.button.secondary {
+  background: var(--color-10);
+  color: var(--color-2);
+}
+
+.button.secondary:hover {
+  background: var(--color-9);
 }
 
 @media (max-width: 600px) {
-  .button {
+  .button-primary {
     padding: 12px 16px;
     font-size: 1rem;
   }
