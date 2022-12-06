@@ -58,3 +58,24 @@
 .link:hover {
   color: var(--color-0);
 }
+
+.title-background {
+  background-color: var(--color-11);
+  padding: 60px 0;
+}
+
+.title p {
+  margin: 0 0 4px 0;
+}
+
+@media (max-width: 800px) {
+  .title {
+    padding: 40px 20px;
+  }
+
+  .title p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400px;
+  }
+}

@@ -18,3 +18,6 @@
 @import url('../partials/testimony.css');
 @import url('../partials/secure.css');
 @import url('../partials/footer.css');
+
+/* Termos e condições */
+@import url('../partials/terms.css');
