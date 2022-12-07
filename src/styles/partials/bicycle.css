@@ -1,0 +1,98 @@
+.bicycle-background {
+  /* Dá a ilusão de que a imagem do segundo card está vazada. */
+  background: linear-gradient(to right, var(--color-0) 30%, var(--color-11) 0%);
+}
+
+.bicycle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.bicycle-image {
+  display: grid;
+}
+
+.bicycle-image img {
+  grid-area: 1 / 1;
+}
+
+.bicycle-image span {
+  grid-area: 1 / 1;
+  place-self: start end;
+  margin: 20px 0 0 0;
+  display: inline-block;
+  background-color: var(--color-12);
+  padding: 8px 16px 8px 8px;
+  border-radius: 5px 0 0 5px;
+}
+
+.bicycle-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: flex-start;
+}
+
+.bicycle h2, .bicycle p {
+  grid-column: 1 / -1;
+}
+
+.bicycle h2 {
+  margin: 0 0 20px 0;
+}
+
+.bicycle h2::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--color-p1);
+  margin: 0 0 8px 0;
+}
+
+.bicycle p {
+  margin: 0 0 32px 0;
+}
+
+.bicycle a {
+  place-self: end;
+}
+
+.bicycle ul {
+  display: grid;
+  gap: 16px;
+}
+
+.bicycle li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bicycle-content img {
+  width: 24px;
+}
+
+@media (max-width: 800px) {
+  .bicycle-background {
+    background: var(--color-11);
+  }
+  .bicycle {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media(max-width: 600px) {
+  .bicycle ul {
+    font-size: 1rem;
+    margin: 0 0 32px 0;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bicycle a {
+    place-self: start;
+  }
+}

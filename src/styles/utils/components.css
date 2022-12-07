@@ -32,6 +32,26 @@
   background: var(--color-9);
 }
 
+.button.arrow {
+  display: flex;
+  align-items: center;
+}
+
+.button.arrow::after {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin: 0 0 0 12px;
+  background-image: url('../../assets/svg/seta.svg');
+  transition: transform 0.2s;
+}
+
+/* Quando passado o mouse por cima modifica o after. */
+.button.arrow:hover::after {
+  transform: translateX(4px);
+}
+
 @media (max-width: 600px) {
   .button-primary {
     padding: 12px 16px;
@@ -61,7 +81,7 @@
 
 .title-background {
   background-color: var(--color-11);
-  padding: 60px 0;
+  padding: 60px 0px;
 }
 
 .title p {
@@ -70,12 +90,11 @@
 
 @media (max-width: 800px) {
   .title {
-    padding: 40px 20px;
+    padding: 0px 20px;
   }
 
   .title p {
     font-size: 1rem;
-    text-transform: lowercase;
     font-weight: 400px;
   }
 }
