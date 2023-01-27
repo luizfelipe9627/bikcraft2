@@ -1,3 +1,5 @@
+/* Componentes são elementos que tem seus valores e estilos próprios, que é criado no intuito de ser usado em vários lugares e evitar deixar o código mais poluído. */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
