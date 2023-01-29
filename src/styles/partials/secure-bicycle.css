@@ -1,0 +1,49 @@
+.secure-bicycle-background {
+  background-color: var(--color-11);
+  /* Dá o efeito de que a imagem está flutuando/vazando. */
+  box-shadow: inset 0 120px var(--color-0), inset 0 -120px var(--color-12);
+}
+
+.secure-bicycle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.secure-bicycle h2 {
+  margin-bottom: 32px;
+}
+
+.secure-bicycle p {
+  margin-bottom: 20px;
+}
+
+.secure-bicycle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.secure-bicycle-image img:hover {
+  animation: shake-vertical 2s linear both
+}
+
+.secure-bicycle-content {
+  padding: 180px 0;
+}
+
+@media (max-width: 800px) {
+  .secure-bicycle-background {
+    /* Dá o efeito de que a imagem está flutuando/vazando. */
+    box-shadow: inset 0 -60px var(--color-12);
+  }
+
+  .secure-bicycle {
+    grid-template-columns: 1fr;
+  }
+
+  .secure-bicycle-content {
+    grid-row: 1;
+    padding: 40px 0 0 0;
+  }
+}
