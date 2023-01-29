@@ -6,6 +6,11 @@
   padding: 120px 20px;
 }
 
+.benefits li:hover {
+  transform: translateY(-10px);
+  transition: 1.5s;
+}
+
 .benefits h2 {
   margin: 0 0 60px 0;
 }

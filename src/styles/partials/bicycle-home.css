@@ -1,24 +1,24 @@
-.bicycle-background {
+.bicycle-home-background {
   /* Dá a ilusão de que a imagem do segundo card está vazada. */
   background: linear-gradient(to right, var(--color-0) 30%, var(--color-11) 0%);
 }
 
-.bicycle {
+.bicycle-home {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   padding: 60px 20px;
 }
 
-.bicycle-image {
+.bicycle-home-image {
   display: grid;
 }
 
-.bicycle-image img {
+.bicycle-home-image img {
   grid-area: 1 / 1;
 }
 
-.bicycle-image span {
+.bicycle-home-image span {
   grid-area: 1 / 1;
   place-self: start end;
   margin: 20px 0 0 0;
@@ -28,21 +28,21 @@
   border-radius: 5px 0 0 5px;
 }
 
-.bicycle-content {
+.bicycle-home-content {
   display: grid;
   grid-template-columns: 1fr auto;
   align-content: flex-start;
 }
 
-.bicycle h2, .bicycle p {
+.bicycle-home h2, .bicycle-home p {
   grid-column: 1 / -1;
 }
 
-.bicycle h2 {
+.bicycle-home h2 {
   margin: 0 0 20px 0;
 }
 
-.bicycle h2::before {
+.bicycle-home h2::before {
   content: '';
   display: block;
   width: 12px;
@@ -51,34 +51,34 @@
   margin: 0 0 8px 0;
 }
 
-.bicycle p {
+.bicycle-home p {
   margin: 0 0 32px 0;
 }
 
-.bicycle a {
+.bicycle-home a {
   place-self: end;
 }
 
-.bicycle ul {
+.bicycle-home ul {
   display: grid;
   gap: 16px;
 }
 
-.bicycle li {
+.bicycle-home li {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.bicycle-content img {
+.bicycle-home-content img {
   width: 24px;
 }
 
 @media (max-width: 800px) {
-  .bicycle-background {
+  .bicycle-home-background {
     background: var(--color-11);
   }
-  .bicycle {
+  .bicycle-home {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
@@ -86,13 +86,13 @@
 }
 
 @media(max-width: 600px) {
-  .bicycle ul {
+  .bicycle-home ul {
     font-size: 1rem;
     margin: 0 0 32px 0;
     grid-template-columns: 1fr 1fr;
   }
 
-  .bicycle a {
+  .bicycle-home a {
     place-self: start;
   }
 }

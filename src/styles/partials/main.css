@@ -13,7 +13,7 @@
 @import url('../partials/header.css');
 @import url('../partials/footer.css');
 
-/* Página bicicletas */
+/* Páginas principais */
 @import url('../partials/introduction.css');
 @import url('../partials/bicycle-list.css');
 @import url('../partials/technology.css');
@@ -26,10 +26,11 @@
 @import url("../partials/questions.css");
 
 /* Página contato */
-
+@import url('../partials/contact.css');
 
 /* Termos e condições */
 @import url('../partials/terms.css');
 
-/* Bicicletas */
-@import url('../partials/bicycle.css');
+/* Página bicicletas */
+@import url('../partials/bicycle-home.css');
+@import url('../partials/bicycles.css');
