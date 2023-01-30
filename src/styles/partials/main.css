@@ -8,6 +8,7 @@
 @import url('../utils/typography.css');
 @import url('../utils/colors.css');
 @import url('../utils/keyframes.css');
+@import url('../utils/form.css');
 
 /*  Páginas padrões */
 @import url('../partials/header.css');
@@ -27,6 +28,7 @@
 
 /* Página contato */
 @import url('../partials/contact.css');
+@import url('../partials/secure.css');
 
 /* Termos e condições */
 @import url('../partials/terms.css');
