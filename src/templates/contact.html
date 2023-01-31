@@ -16,7 +16,7 @@
   <title>Contato | Bikcraft</title>
 </head>
 
-<body>
+<body id="contact">
   <!-- É um header pois é o cabeçalho do site. -->
   <header class="header-background">
     <div class="header container">
@@ -44,24 +44,22 @@
     </div>
 
     <div class="contact container">
-      <section aria-label="Endereço">
+      <section aria-label="Endereço" class="contact-details">
         <h2 class="font-1-m color-0">Loja Online</h2>
 
         <div class="contact-address font-2-s color-4">
-          <p>
-            Rua Ali Perto, 171
-            São Paulo - SP
-            Brasil - Terra - Via Láctea
-          </p>
+          <p>Rua Ali Perto, 171 </p>
+          <p> São Paulo - SP</p>
+          <p>Brasil - Terra - Via Láctea</p>
         </div>
 
-        <address class="means-contact font-2-s color-4">
+        <address class="contact-means font-2-s color-4">
           <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
           <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
-          ><a href="tel:+551112344321">+55 11 1234-4321</a>
+          <a href="tel:+551112344321">+55 11 1234-4321</a>
         </address>
 
-        <div class="social-networks ">
+        <div class="social-networks">
           <a href="./contact.html">
             <img src="../assets/svg/instagram-p.svg" alt="Instagram">
           </a>
@@ -74,6 +72,32 @@
             <img src="../assets/svg/youtube-p.svg" alt="YouTube">
           </a>
         </div>
+      </section>
+
+      <section aria-label="Formulário" class="contact-form">
+        <form action="./contact.html" class="form">
+          <div>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome">
+          </div>
+
+          <div>
+            <label for="tel">Telefone</label>
+            <input type="tel" id="tel" name="tel" placeholder="(11) 99999-9999">
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="contato@email.com">
+          </div>
+
+          <div>
+            <label for="message">Mensagem</label>
+            <textarea rows="5" id="message" name="message" placeholder="O que você precisa?"></textarea>
+          </div>
+
+          <button type="submit" class="button">Enviar mensagem</button>
+        </form>
       </section>
     </div>
   </main>
