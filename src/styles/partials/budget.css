@@ -34,6 +34,82 @@
 .budget-product {
   border-radius: 5px 0 0 5px;
   background-color: var(--color-12);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: flex-start;
+  gap: 20px
+}
+
+/* Fala com todos os elementos dentro do budget-product. */
+.budget-product > * {
+  grid-column: 1 / -1;
+}
+
+.budget-product > label {
+  grid-column: initial;
+}
+
+.budget-product label {
+  /* Peso - Tamanho/Altura - Fonte */
+  font: 400 1rem/1.5 "Poppins", sans-serfi;
+  color: var(--color-4);
+  background-color: var(--color-10);
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  border: 1px solid var(--color-12);
+}
+
+.budget-product label::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--color-6);
+  border-radius: 50%;
+  margin-right: 8px;
+  box-sizing: border-box;
+}
+
+.budget-product label:hover {
+  background-color: var(--color-9);
+  border-color: var(--color-9);
+}
+
+.budget-product input:focus + label {
+  box-shadow: 0 0 0 2px var(--color-p1);
+  border-color: var(--color-12);
+}
+
+.budget-product label span {
+  display: none;
+}
+
+/* Fala com o span dentro do label label que vem seguido do input checado. */
+.budget-product input:checked + label span {
+  display: inline-block;
+}
+
+.budget-product input {
+  opacity: 0;
+  position: absolute;
+  /* Tira o evento de clique do input radio. */
+  pointer-events: none;
+}
+
+/* Fala com o label que vem seguido do input checado. */
+.budget-product input:checked + label {
+  background-color: var(--color-0);
+  color: var(--color-11);
+}
+
+/* Fala com o elemento antes do label que vem seguido do elemento input checado. */
+.budget-product input:checked + label::before  {
+  border-color: var(--color-7);
+  box-shadow: inset 0 0 0 3px var(--color-0), inset 0 0 0 6px var(--color-7);
 }
 
 .budget-data {
@@ -41,7 +117,45 @@
   background: var(--color-0);
 }
 
+.budget-content {
+  display: none;
+}
+
+.budget-content h2, .budget-data h2:nth-of-type(n + 2) {
+  margin-top: 20px;
+}
+
 /* Quando o bikcraft/secure estiver checado ele irá pular os seletores até encontrar o budget-bikcraft/secure. */
 #bikcraft:checked ~ #budget-bikcraft, #secure:checked ~ #budget-secure {
-  display: block;
+  display: grid;
+  gap: 20px;
+}
+
+.budget-details {
+  display: none;
+  background-color: var(--color-0);
+  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 4px;
+  align-items: center;
+}
+
+.budget-details li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.budget-details li img {
+  width: 16px;
+  margin-right: 8px;
+}
+
+/* Quando o input radio estiver checado/ativo irá pegar o primeiro buget-details que está dentro de uma label. */
+.budget-product input:checked + label + .budget-details {
+  display: grid;
+}
+
+@media (max-width: 1200px) {
+  
 }
