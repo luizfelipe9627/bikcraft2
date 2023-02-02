@@ -5,7 +5,6 @@
 .contact {
   display: grid;
   grid-template-columns: 5fr 7fr;
-  margin-bottom: 60px;
 }
 
 .contact-details,

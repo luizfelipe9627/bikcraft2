@@ -29,6 +29,7 @@
 /* Página contato */
 @import url('../partials/contact.css');
 @import url('../partials/secure.css');
+@import url('../partials/store.css');
 
 /* Termos e condições */
 @import url('../partials/terms.css');
@@ -37,3 +38,7 @@
 @import url('../partials/bicycle-home.css');
 @import url('../partials/bicycles.css');
 @import url('../partials/secure-bicycle.css');
+
+
+/* Página orçamento */
+@import url('../partials/budget.css');
