@@ -32,20 +32,21 @@
 }
 
 .budget-product {
+  /* Está adicionando um fundo e depois adicionando uma decoração no container, tendo as posições e os distanciamentos desejados. */
+  background: var(--color-12) url('../../assets/svg/bottom-left.svg') no-repeat bottom 20px left 20px;
   border-radius: 5px 0 0 5px;
-  background-color: var(--color-12);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-content: flex-start;
-  gap: 20px
+  gap: 20px;
 }
 
 /* Fala com todos os elementos dentro do budget-product. */
-.budget-product > * {
+.budget-product>* {
   grid-column: 1 / -1;
 }
 
-.budget-product > label {
+.budget-product>label {
   grid-column: initial;
 }
 
@@ -79,7 +80,7 @@
   border-color: var(--color-9);
 }
 
-.budget-product input:focus + label {
+.budget-product input:focus+label {
   box-shadow: 0 0 0 2px var(--color-p1);
   border-color: var(--color-12);
 }
@@ -89,7 +90,7 @@
 }
 
 /* Fala com o span dentro do label label que vem seguido do input checado. */
-.budget-product input:checked + label span {
+.budget-product input:checked+label span {
   display: inline-block;
 }
 
@@ -101,32 +102,35 @@
 }
 
 /* Fala com o label que vem seguido do input checado. */
-.budget-product input:checked + label {
+.budget-product input:checked+label {
   background-color: var(--color-0);
   color: var(--color-11);
 }
 
 /* Fala com o elemento antes do label que vem seguido do elemento input checado. */
-.budget-product input:checked + label::before  {
+.budget-product input:checked+label::before {
   border-color: var(--color-7);
   box-shadow: inset 0 0 0 3px var(--color-0), inset 0 0 0 6px var(--color-7);
 }
 
 .budget-data {
   border-radius: 0 5px 5px 0;
-  background: var(--color-0);
+  /* Está adicionando um fundo e depois adicionando uma decoração no container, tendo as posições e os distanciamentos desejados. */
+  background: var(--color-0) url('../../assets/svg/bottom-left.svg') no-repeat bottom 20px right 20px;
 }
 
 .budget-content {
   display: none;
 }
 
-.budget-content h2, .budget-data h2:nth-of-type(n + 2) {
+.budget-content h2,
+.budget-data h2:nth-of-type(n + 2) {
   margin-top: 20px;
 }
 
 /* Quando o bikcraft/secure estiver checado ele irá pular os seletores até encontrar o budget-bikcraft/secure. */
-#bikcraft:checked ~ #budget-bikcraft, #secure:checked ~ #budget-secure {
+#bikcraft:checked~#budget-bikcraft,
+#secure:checked~#budget-secure {
   display: grid;
   gap: 20px;
 }
@@ -152,10 +156,34 @@
 }
 
 /* Quando o input radio estiver checado/ativo irá pegar o primeiro buget-details que está dentro de uma label. */
-.budget-product input:checked + label + .budget-details {
+.budget-product input:checked+label+.budget-details {
   display: grid;
 }
 
 @media (max-width: 1200px) {
-  
+  .budget-product,
+  .budget-data {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .budget {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-product {
+    border-radius: 5px 5px 0 0;
+    background: var(--color-12)
+  }
+
+  .budget-data {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .budget-product {
+    grid-template-columns: 1fr;
+  }
 }

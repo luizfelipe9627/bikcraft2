@@ -7,24 +7,26 @@
   grid-template-columns: 5fr 7fr;
 }
 
-.contact-details,
+.contact-data,
 .contact-form {
   padding: 60px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.contact-details {
-  background-color: var(--color-12);
+.contact-data {
+  /* Está adicionando um fundo e depois adicionando uma decoração no container, tendo as posições e os distanciamentos desejados. */
+  background: var(--color-12) url('../../assets/svg/bottom-left.svg') no-repeat bottom 20px left 20px;
   border-radius: 5px 0 0 5px;
 }
 
-.contact-details h2 {
+.contact-data h2 {
   margin-bottom: 60px;
 }
 
 .contact-form {
-  background-color: var(--color-0);
   border-radius: 0 5px 5px 0;
+  /* Está adicionando um fundo e depois adicionando uma decoração no container, tendo as posições e os distanciamentos desejados. */
+  background: var(--color-0) url('../../assets/svg/bottom-right.svg') no-repeat bottom 20px right 20px;
 }
 
 .contact-address {
@@ -64,7 +66,7 @@
 .social-networks {
   display: flex;
   gap: 32px;
-  padding-left: 28px;
+  padding: 0 0 50px 28px;
 }
 
 @media (max-widtH: 800px) {
@@ -72,16 +74,17 @@
     grid-template-columns: 1fr;
   }
 
-  .contact-details,
+  .contact-data,
   .contact-form {
     padding: 20px;
   }
 
-  .contact-details {
+  .contact-data {
     border-radius: 5px 5px 0 0;
+    background: var(--color-12);
   }
 
-  .contact-details h2 {
+  .contact-data h2 {
     margin-bottom: 32px;
   }
 
@@ -89,7 +92,8 @@
     border-radius: 0 0 5px 5px;
   }
 
-  .contact-details, .contact-means a:nth-child(3) {
+  .contact-data,
+  .contact-means a:nth-child(3) {
     margin-bottom: 32px;
   }
 

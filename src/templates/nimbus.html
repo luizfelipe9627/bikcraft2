@@ -8,6 +8,7 @@
 
   <link rel="icon" href="../assets/svg/favicon.svg" type="image/svg+xml">
 
+  <link rel="preload" href="./src/styles/partials/main.css" as="style">
   <link rel="stylesheet" href="../styles/partials/main.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +22,20 @@
   <header class="header-background">
     <div class="header container">
       <a href="../../index.html">
-        <img src="../assets/svg/bikcraft.svg" alt="Bikcraft">
+        <img src="../assets/svg/bikcraft.svg" alt="Bikcraft" width="136" height="32">
       </a>
 
       <nav aria-label="Primária">
         <ul class="header-menu font-1-m color-0">
-          <li><a href="../templates/bicycle.html">Bicicletas</a> </li>
-          <li><a href="../templates/secure.html">Seguros</a></li>
-          <li><a href="../templates/contact.html">Contato</a></li>
+          <li>
+            <a href="../templates/bicycle.html">Bicicletas</a> 
+          </li>
+          <li>
+            <a href="../templates/secure.html">Seguros</a>
+          </li>
+          <li>
+            <a href="../templates/contact.html">Contato</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -45,9 +52,9 @@
 
     <div class="bicycle container">
       <div class="bicycle-images">
-        <img src="../assets/img/nimbus1.jpg" alt="Nimbus 1">
-        <img src="../assets/img/nimbus2.jpg" alt="Nimbus 2">
-        <img src="../assets/img/nimbus3.jpg" alt="Nimbus 3">
+        <img src="../assets/img/nimbus1.jpg" alt="Nimbus 1" width="1120" height="880">
+        <img src="../assets/img/nimbus2.jpg" alt="Nimbus 2" width="1120" height="880">
+        <img src="../assets/img/nimbus3.jpg" alt="Nimbus 3" width="1120" height="880">
       </div>
 
       <div class="bicycle-content">
@@ -55,32 +62,38 @@
 
         <div class="bicycle-buy">
           <a class="button" href="./budget.html">Comprar agora</a>
-          <span class="font-1-xs color-6"><img src="../assets/svg/entrega.svg" alt="Entrega"> Entrega em até 6 dias</span>
-          <span class="font-1-xs color-6"><img src="../assets/svg/estoque.svg" alt="Estoque"> 12 em estoque</span>
+
+          <span class="font-1-xs color-6">
+            <img src="../assets/svg/entrega.svg" alt="Entrega" width="16" height="16"> Entrega em até 6 dias
+          </span>
+          <span class="font-1-xs color-6">
+            <img src="../assets/svg/estoque.svg" alt="Estoque" width="16" height="16"> 
+            12 em estoque
+          </span>
         </div>
 
         <h2 class="font-1-xs color-0">Informações</h2>
         <ul class="bicycle-infos">
           <li>
-            <img src="../assets/svg/eletrica.svg" alt="Elétrica">
+            <img src="../assets/svg/eletrica.svg" alt="Elétrica" width="32" height="32">
             <h3 class="font-1-m color-0">Motor Elétrico</h3>
             <p class="font-2-xs color-5">Permite você viajar distâncias inimagináveis com a sua bike.</p>
           </li>
 
           <li>
-            <img src="../assets/svg/velocidade.svg" alt="Velocidade">
+            <img src="../assets/svg/velocidade.svg" alt="Velocidade" width="32" height="32">
             <h3 class="font-1-m color-0">50 km/h</h3>
             <p class="font-2-xs color-5">A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
           </li>
 
           <li>
-            <img src="../assets/svg/rastreador.svg" alt="Rastreador">
+            <img src="../assets/svg/rastreador.svg" alt="Rastreador" width="32" height="32">
             <h3 class="font-1-m color-0">Rastreador</h3>
             <p class="font-2-xs color-5">Rastreador e sistema anti-furto para garantir o seu sossego.</p>
           </li>
 
           <li>
-            <img src="../assets/svg/carbono.svg" alt="Fibra de carbono">
+            <img src="../assets/svg/carbono.svg" alt="Fibra de carbono" width="32" height="32">
             <h3 class="font-1-m color-0">Fibra de carbono</h3>
             <p class="font-2-xs color-5">Maior proteção possível para a sua Bikcraft com fibra de carbono.</p>
           </li>
@@ -106,7 +119,7 @@
     <ul>
       <li>
         <a href="./magic.html">
-          <img src="../../src/assets/img/magic.jpg" alt="Bicicleta Magic">
+          <img src="../../src/assets/img/magic.jpg" alt="Bicicleta Magic" width="1120" height="680">
           <h3 class="font-1-xl">Magic Might</h3>
           <span class="font-2-m color-8">R$ 2499</span>
         </a>
@@ -114,7 +127,7 @@
 
       <li>
         <a href="./nebula.html">
-          <img src="../../src/assets/img/nebula.jpg" alt="Bicicleta Nebula">
+          <img src="../../src/assets/img/nebula.jpg" alt="Bicicleta Nebula" width="1120" height="680">
           <h3 class="font-1-xl">Nebula Cosmic</h3>
           <span class="font-2-m color-8">R$ 3999</span>
         </a>
@@ -126,7 +139,7 @@
   <article class="secure-bicycle-background">
     <div class="secure-bicycle container">
       <div class="secure-bicycle-image">
-        <img src="../assets/img/seguros.jpg" alt="Pessoa parada em cima de uma bicicleta">
+        <img src="../assets/img/seguros.jpg" alt="Pessoa parada em cima de uma bicicleta" width="1360" height="1512">
       </div>
 
       <div class="secure-bicycle-content">
@@ -140,7 +153,7 @@
   <!-- É um footer pois é o rodapé do site. -->
   <footer class="footer-background">
     <div class="footer container">
-      <img src="../../src/assets/svg/bikcraft.svg" alt="Bikcraft">
+      <img src="../../src/assets/svg/bikcraft.svg" alt="Bikcraft" width="136" height="32">
 
       <div class="footer-contact">
         <h3 class="font-2-l-b color-0">Contato</h3>
@@ -154,15 +167,15 @@
 
         <div class="footer-media">
           <a href="./nimbus.html">
-            <img src="../assets/svg/instagram.svg" alt="Instagram">
+            <img src="../assets/svg/instagram.svg" alt="Instagram" width="32" height="32">
           </a>
 
           <a href="./nimbus.html"">
-            <img src=" ../assets/svg/facebook.svg" alt="Facebook">
+            <img src=" ../assets/svg/facebook.svg" alt="Facebook" width="32" height="32">
           </a>
 
           <a href="./nimbus.html"">
-            <img src=" ../assets/svg/youtube.svg" alt="YouTube">
+            <img src=" ../assets/svg/youtube.svg" alt="YouTube" width="32" height="32">
           </a>
         </div>
       </div>

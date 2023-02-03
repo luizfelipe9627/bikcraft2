@@ -1,5 +1,6 @@
 .introduction-background {
-  background-color: var(--color-12);
+  /* Está adicionando um fundo e depois adicionando uma decoração no container, tendo as posições e os distanciamentos desejados. */
+  background: var(--color-12) url('../../assets/svg/bottom-left.svg') no-repeat bottom 160px left 20px;
   /* Faz um efeito de que a foto está flutuando. */
   box-shadow: inset 0 -120px var(--color-0);
 }
@@ -38,7 +39,7 @@
 @media (max-width: 800px) {
   .introduction-background {
     padding-top: 40px;
-    background-color: var(--color-11);
+    background: var(--color-11);
     box-shadow: inset 0 -60px var(--color-0);
   }
 
