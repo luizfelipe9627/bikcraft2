@@ -9,6 +9,11 @@ Bikcraft é um site de bicicleta na qual te da acesso ao seguro, modelos de bici
 ## 📑 Observação
 Esse projeto é o projeto final do módulo de HTML5 e CSS3 feito na Origamid.
 
+## 🔍 Layout 
+Este layout foi criado por André Rafael no curso realizado através da Origamid.
+
+### <a href="https://www.origamid.com/curso/html-e-css-para-iniciantes">Acessar o site</a>
+
 ### <a href="https://luizfelipe9627-bikcraft-2.netlify.app">Acesse o site</a>
 
 ## 💻 Tecnologias utilizadas
