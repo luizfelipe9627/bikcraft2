@@ -2,7 +2,7 @@
   background-color: var(--color-12);
 }
 
-.header {
+header .header {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -34,7 +34,8 @@
   position: absolute;
 }
 
-.header-menu a:hover:after {
+/* O segundo elemento é quando o link tiver a classe ativo vai tornar a linha abaixo estática.  */
+.header-menu a:hover::after, .header-menu a.ativo::after {
   width: 100%;
 }
 

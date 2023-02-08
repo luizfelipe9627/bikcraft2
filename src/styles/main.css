@@ -1,0 +1,42 @@
+/* Globais */
+@import url('../styles/global/reset.css');
+@import url('../styles/global/global.css');
+@import url('../styles/global/header.css');
+@import url('../styles/global/footer.css');
+
+@import url('./fonts/font.css');
+
+/* Utilidades */
+@import url('../styles/utils/components.css');
+@import url('../styles/utils/typography.css');
+@import url('../styles/utils/colors.css');
+@import url('../styles/utils/keyframes.css');
+@import url('../styles/utils/form.css');
+
+/* Páginas principais */
+@import url('../styles/partials/introduction.css');
+@import url('../styles/partials/bicycle-list.css');
+@import url('../styles/partials/technology.css');
+@import url('../styles/partials/partners.css');
+@import url('../styles/partials/testimony.css');
+
+/* Página seguros */
+@import url('../styles/partials/secure.css');
+@import url("../styles/partials/benefits.css");
+@import url("../styles/partials/questions.css");
+
+/* Página contato */
+@import url('../styles/partials/contact.css');
+@import url('../styles/partials/secure.css');
+@import url('../styles/partials/store.css');
+
+/* Termos e condições */
+@import url('../styles/partials/terms.css');
+
+/* Página bicicletas */
+@import url('../styles/partials/bicycle-home.css');
+@import url('../styles/partials/bicycles.css');
+@import url('../styles/partials/secure-bicycle.css');
+
+/* Página orçamento */
+@import url('../styles/partials/budget.css');
