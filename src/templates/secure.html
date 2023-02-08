@@ -129,33 +129,57 @@
     <!--! DL é uma lista de definição. DT é a pergunta e DD é a resposta da pergunta. -->
     <dl>
       <div>
-        <dt class="font-1-m-b">Qual forma de pagamento vocês aceitam?</dt>
-        <dd class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt>
+          <!-- O aria-expanded diz se está aberto ou não. E o aria-controls é qual elemento irá aparecer quando aberto. -->
+          <button class="font-1-m-b" aria-expanded="true" aria-controls="question1">
+            Qual forma de pagamento vocês aceitam?
+          </button>
+        </dt>
+
+        <dd class="font-2-s color-9 active" id="question1">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
       </div>
 
       <div>
-        <dt class="font-1-m-b">Como posso entrar em contato?</dt>
-        <dd class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt>
+          <!-- O aria-expanded diz se está aberto ou não. E o aria-controls é qual elemento irá aparecer quando aberto. -->
+          <button class="font-1-m-b" aria-expanded="false" aria-controls="question2">Como posso entrar em contato?</button>
+        </dt>
+
+        <dd class="font-2-s color-9" id="question2">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
       </div>
 
       <div>
-        <dt class="font-1-m-b">Vocês possuem algum desconto?</dt>
-        <dd class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt>
+          <!-- O aria-expanded diz se está aberto ou não. E o aria-controls é qual elemento irá aparecer quando aberto. -->
+          <button class="font-1-m-b" aria-expanded="false" aria-controls="question3">Vocês possuem algum desconto?</button>
+        </dt>
+
+        <dd class="font-2-s color-9" id="question3">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
       </div>
 
       <div>
-        <dt class="font-1-m-b">Qual a garantia que possuo?</dt>
-        <dd class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt>
+          <!-- O aria-expanded diz se está aberto ou não. E o aria-controls é qual elemento irá aparecer quando aberto. -->
+          <button class="font-1-m-b" aria-expanded="false" aria-controls="question4">Qual a garantia que possuo?</button>
+        </dt>
+
+        <dd class="font-2-s color-9" id="question4">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
       </div>
 
       <div>
-        <dt class="font-1-m-b">Posso parcelar no boleto?</dt>
-        <dd class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt>
+          <button class="font-1-m-b" aria-expanded="false" aria-controls="question5">Posso parcelar no boleto?</button>
+        </dt>
+
+        <dd class="font-2-s color-9" id="question5">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
       </div>
 
       <div>
-        <dt class="font-1-m-b">Quantas trocas posso fazer ao ano?</dt>
-        <dd class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt>
+          <button class="font-1-m-b" aria-expanded="false" aria-controls="question6">Quantas trocas posso fazer ao ano?</button>
+        </dt>
+
+        <dd class="font-2-s color-9" id="question6">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
       </div>
     </dl>
   </article>

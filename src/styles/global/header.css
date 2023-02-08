@@ -34,8 +34,8 @@ header .header {
   position: absolute;
 }
 
-/* O segundo elemento é quando o link tiver a classe ativo vai tornar a linha abaixo estática.  */
-.header-menu a:hover::after, .header-menu a.ativo::after {
+/* O segundo elemento é quando o link tiver a classe active vai tornar a linha abaixo estática.  */
+.header-menu a:hover::after, .header-menu a.active::after {
   width: 100%;
 }
 
