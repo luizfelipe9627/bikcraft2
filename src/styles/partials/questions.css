@@ -49,11 +49,11 @@
   transition: 0.3s;
 }
 
-.questions dd {
+.js .questions dd {
   display: none;
 }
 
-.questions dd.active {
+.js .questions dd.active {
   display: block;
 }
 

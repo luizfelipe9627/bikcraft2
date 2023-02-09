@@ -98,3 +98,11 @@ function eventsGallery(img) {
 
 // O forEach recebe uma função que recebe cada img da função e a executa até não restar mais parâmetro.
 gallery.forEach(eventsGallery);
+
+/* Animação utilizando plugin. */
+
+// Verifica se o plugin existe em tal página, se existir ele executa o plugin.
+if (window.SimpleAnime) {
+  // Executa o plugin.
+  new SimpleAnime();
+}

@@ -15,6 +15,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <script>
+    // A classe só vai ser colocada no HTML se o JS estiver ativado, assim fazendo os elementos que dependem do JS funcionar também, caso contrario não irá executar nada do JS, assim não terá o risco de acontecer bugs ou imprevistos.
+    document.documentElement.classList.add('js')
+  </script>
+
   <title>Bikcraft - Bicicletas Elétricas</title>
 </head>
 
@@ -40,14 +45,14 @@
   <main class="introduction-background">
     <div class="introduction container">
       <div class="introduction-content">
-        <h1 class="font-1-xxl color-0">Bicicletas feitas sob medida<span class="color-p1">.</span></h1>
-        <p class="font-2-l color-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <h1 class="font-1-xxl color-0" data-anime="200">Bicicletas feitas sob medida<span class="color-p1">.</span></h1>
+        <p class="font-2-l color-5" data-anime="400">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
 
-        <a href="./src/templates/bicycle.html" class="button">Escolha a sua</a>
+        <a href="./src/templates/bicycle.html" class="button" data-anime="600">Escolha a sua</a>
       </div>
 
       <!-- O picture aceita tanto uma imagem como um source. -->
-      <picture>
+      <picture data-anime="800">
         <!-- O source é usado para carregar uma imagem. O srcset é a imagem que vai ser carregada e o media é a partir de que tela irá aplicar essa imagem. -->
         <source srcset="./src/assets/img/nimbus.jpg" media="(max-width: 800px)">
         <img src="./src/assets/img/introducao.jpg" alt="Bicicleta elétrica preta" width="1280" height="1600">
@@ -231,7 +236,9 @@
     </div>
   </footer>
 
-  <script src="./src/js/script.js"></script>
+  <!-- Primeiro deve ser carregando o plugin depois o script. -->
+  <script src="./src/scripts/simple-anime.js"></script>
+  <script src="./src/scripts/script.js"></script>
 </body>
 
 </html>

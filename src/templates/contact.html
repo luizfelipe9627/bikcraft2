@@ -14,6 +14,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <script>
+    // A classe só vai ser colocada no HTML se o JS estiver ativado, assim fazendo os elementos que dependem do JS funcionar também, caso contrario não irá executar nada do JS, assim não terá o risco de acontecer bugs ou imprevistos.
+    document.documentElement.classList.add('js')
+  </script>
+
   <title>Contato | Bikcraft</title>
 </head>
 
@@ -45,7 +50,7 @@
     </div>
 
     <div class="contact container">
-      <section aria-label="Endereço" class="contact-data">
+      <section aria-label="Endereço" class="contact-data fadeInUp" data-anime="200">
         <h2 class="font-1-m color-0">Loja Online</h2>
 
         <div class="contact-address font-2-s color-4">
@@ -76,7 +81,7 @@
         </div>
       </section>
 
-      <section aria-label="Formulário" class="contact-form">
+      <section aria-label="Formulário" class="contact-form fadeInDown" data-anime="400">
         <form action="./contact.html" class="form">
           <div>
             <label for="name">Nome</label>
@@ -200,7 +205,9 @@
     </div>
   </footer>
 
-  <script src="../js/script.js"></script>
+  <!-- Primeiro deve ser carregando o plugin depois o script. -->
+  <script src="../scripts/simple-anime.js"></script>
+  <script src="../scripts/script.js"></script>
 </body>
 
 </html>

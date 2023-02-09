@@ -26,7 +26,7 @@
   display: inline-block;
   background-color: var(--color-12);
   padding: 8px 16px 8px 8px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 4px 0 0 4px;
 }
 
 .bicycle-home-content {
@@ -35,7 +35,8 @@
   align-content: flex-start;
 }
 
-.bicycle-home h2, .bicycle-home p {
+.bicycle-home h2,
+.bicycle-home p {
   grid-column: 1 / -1;
 }
 
@@ -79,10 +80,11 @@
   .bicycle-home-background {
     background: var(--color-11);
   }
+
   .bicycle-home {
     grid-template-columns: 1fr;
     gap: 20px;
-    padding: 20px;
+    padding: 40px 20px;
   }
 }
 
@@ -93,7 +95,16 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .bicycle-home-content {
+    grid-template-columns: 1fr;
+  }
+
+  .button.arrow::after {
+    display: none;
+  }
+
   .bicycle-home a {
     place-self: start;
+    padding: 10px 15px;
   }
 }

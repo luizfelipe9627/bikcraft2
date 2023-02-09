@@ -14,6 +14,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <script>
+    // A classe só vai ser colocada no HTML se o JS estiver ativado, assim fazendo os elementos que dependem do JS funcionar também, caso contrario não irá executar nada do JS, assim não terá o risco de acontecer bugs ou imprevistos.
+    document.documentElement.classList.add('js')
+  </script>
+
   <title>Seguros | Bikcraft</title>
 </head>
 
@@ -45,7 +50,7 @@
     </div>
 
     <div class="secure container">
-      <div class="secure-item">
+      <div class="secure-item fadeInLeft" data-anime="200">
         <h3 class="font-1-xl color-6">PRATA</h3>
         <span class="font-1-xl color-0">R$ 199 <span class="font-1-xs color-6">mensal</span></span>
 
@@ -59,7 +64,7 @@
         <a href="../templates/budget.html?type=secure&product=silver" class="button secondary">Inscreva-se</a>
       </div>
 
-      <div class="secure-item">
+      <div class="secure-item fadeInRight" data-anime="400">
         <h3 class="font-1-xl color-p1">OURO</h3>
         <span class="font-1-xl color-0">R$ 299 <span class="font-1-xs color-6">mensal</span></span>
 
@@ -231,7 +236,9 @@
     </div>
   </footer>
 
-  <script src="../js/script.js"></script>
+  <!-- Primeiro deve ser carregando o plugin depois o script. -->
+  <script src="../scripts/simple-anime.js"></script>
+  <script src="../scripts/script.js"></script>
 </body>
 
 </html>
