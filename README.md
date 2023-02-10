@@ -1,13 +1,13 @@
 # Bikcraft 2
 ![Badge](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)             
 
-<img src="" alt="Apresentação do Bikcraft">
+<img src="https://github.com/luizfelipe9627/bikcraft-2/blob/main/src/assets/img/bikcraft.gif" alt="Apresentação do Bikcraft">
 
 ## 📄 Descrição
-Bikcraft é um site de bicicleta na qual te da acesso ao seguro, modelos de bicicletas, orçamento, contato e muito mais.
+Bikcraft é um site de bicicleta na qual te da acesso a seguro, modelos de bicicletas, orçamento, contato e muito mais.
 
 ## 📑 Observação
-Esse projeto é o projeto final do módulo de HTML5 e CSS3 feito na Origamid.
+Bikcraft é o projeto final do módulo de HTML5 e CSS3 feito na Origamid.
 
 ### <a href="https://luizfelipe9627-bikcraft-2.netlify.app">Acesse o site</a>
 

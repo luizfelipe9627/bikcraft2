@@ -99,10 +99,6 @@
     grid-template-columns: 1fr;
   }
 
-  .button.arrow::after {
-    display: none;
-  }
-
   .bicycle-home a {
     place-self: start;
     padding: 10px 15px;
