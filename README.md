@@ -14,7 +14,7 @@ Bikcraft é o projeto final do módulo de HTML5 e CSS3 feito na Origamid.
 ## 🔍 Layout 
 Este layout foi criado por André Rafael no curso realizado através da Origamid.
 
-### <a href="https://www.origamid.com/curso/html-e-css-para-iniciantes">Acessar o site</a>
+### <a href="https://www.origamid.com/curso/html-e-css-para-iniciantes">Acessar o curso</a>
 
 ## 💻 Tecnologias utilizadas
 
